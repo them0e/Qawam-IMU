@@ -1,0 +1,13 @@
+[run]
+branch = True
+source = pymetawear
+include = */pymetawear/*
+
+[report]
+exclude_lines =
+    except ImportError:
+    def add_stream_logger
+    if debug:
+    raise NotImplementedError
+    pass
+    def _log

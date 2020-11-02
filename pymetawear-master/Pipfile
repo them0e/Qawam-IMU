@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+metawear = "==0.7.0"
+tqdm = "*"
+
+[dev-packages]
+pytest = "*"
+sphinx = "*"
+sphinx-rtd-theme = "*"
+pylint = "*"
+"flake8" = "*"

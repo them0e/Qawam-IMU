@@ -1,0 +1,2 @@
+metawear==0.7.0
+tqdm
