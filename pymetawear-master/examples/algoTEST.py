@@ -2,9 +2,9 @@
 
 import numpy as np
 import csv
-from mpl_toolkits import mplot3d
+#from mpl_toolkits import mplot3d
 # %matplotlib inline
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 def status_detection(z1):
 
@@ -45,12 +45,22 @@ def status_detection(z1):
 
 with open('EU.csv', newline='') as csvfile:
     z = list(csv.reader(csvfile))
+print(z)
+
+
 z = np.array(z)
-z = z.astype(float)
+#z = np.transpose(z)
+# z = z.astype(float)
 print("Type of z: ")
 print(type(z))
 print("shape of z = ")
 print(np.shape(z))
-print(z)
+z1 = z[2:]
+print(z1)
+z2 = z1[0]
+print(z2)
+print(len(z2))
+#print(z)
+
 # status_detection(z)
 #print(z)
